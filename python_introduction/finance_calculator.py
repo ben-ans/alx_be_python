@@ -1,7 +1,15 @@
-monthlyIncome = input("Enter your monthly income: ")
-monthlyExpenses = input("Enter your total monthly expenses: ")
+try:
+    monthlyIncome = float(input("Enter your monthly income: "))
+    monthlyExpenses = float(input("Enter your total monthly expenses: "))
 
-monthlySavings = int(monthlyIncome) - int(monthlyExpenses)
-projectedSavings = monthlySavings*12 + (monthlySavings*12*0.05)
+# Calculate monthly savings
+    monthlySavings = monthlyIncome - monthlyExpenses
 
-print("Projected savings after one year, with interest, is: ", projectedSavings)
+# calculating projected yealy savings
+    projectedSavings = monthlySavings*12 + (monthlySavings*12*0.05)
+
+ # Display result formatted to 2 decimal places
+    print(f"\nProjected savings after one year, with interest: ${projectedSavings:.2f}")
+
+except ValueError:
+    print("Invalid input, please enter numbers only")
