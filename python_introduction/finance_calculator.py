@@ -6,7 +6,8 @@ try:
     monthlySavings = monthlyIncome - monthlyExpenses
 
 # calculating projected yealy savings
-    projectedSavings = monthlySavings*12 + (monthlySavings*12*0.05)
+    yearlysavings = monthlySavings * 12
+    projectedSavings = yearlysavings * 1.05
 
  # Display result formatted to 2 decimal places
     print(f"\nProjected savings after one year, with interest: ${projectedSavings:.2f}")
