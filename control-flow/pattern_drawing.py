@@ -1,3 +1,4 @@
+# Accept input for partten
 size = int(input("Enter the size of the ppattern: "))
 i = 1
 while i <= size:
